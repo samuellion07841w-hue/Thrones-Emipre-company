@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Throne Empire</title>
+    <title>Throne Empire | Next-Gen Games, Apps & Sites</title>
     <style>
         /* Reset and Base Styles */
         * {
@@ -45,13 +45,13 @@
         }
 
         .logo span {
-            color: #d4af37; /* Metallic Gold color */
+            color: #d4af37; /* Metallic Gold */
         }
 
         /* Hero / Welcome Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #2a2a2a;
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), #2a2a2a;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -68,9 +68,9 @@
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 30px;
-            max-width: 600px;
+            max-width: 700px;
             color: #ccc;
         }
 
@@ -79,10 +79,11 @@
             display: inline-block;
             background-color: #d4af37;
             color: #1a1a1a;
-            padding: 12px 30px;
+            padding: 12px 35px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1rem;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
         }
@@ -93,15 +94,15 @@
             transform: translateY(-3px);
         }
 
-        /* Information Section */
-        .info-section {
+        /* General Section Styling */
+        .section {
             padding: 100px 20px;
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
             text-align: center;
         }
 
-        .info-section h2 {
+        .section h2 {
             font-size: 2.5rem;
             margin-bottom: 20px;
             color: #1a1a1a;
@@ -109,7 +110,7 @@
             display: inline-block;
         }
 
-        .info-section h2::after {
+        .section h2::after {
             content: '';
             display: block;
             width: 60px;
@@ -119,29 +120,45 @@
             border-radius: 2px;
         }
 
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+        .section-desc {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
         }
 
-        .info-card {
+        /* Information & Service Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
             background: #fff;
-            padding: 30px;
+            padding: 40px 30px;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            text-align: left;
+            border-top: 4px solid transparent;
         }
 
-        .info-card:hover {
+        .card:hover {
             transform: translateY(-5px);
+            border-top: 4px solid #d4af37;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
 
-        .info-card h3 {
-            color: #d4af37;
+        .card h3 {
+            color: #1a1a1a;
             margin-bottom: 15px;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
+        }
+
+        /* Background alternate for sections */
+        .bg-light {
+            background-color: #f1f1f1;
         }
 
         /* Footer */
@@ -149,7 +166,7 @@
             background-color: #1a1a1a;
             color: #777;
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
             font-size: 0.9rem;
         }
     </style>
@@ -164,37 +181,65 @@
     <!-- Hero / Welcome Section -->
     <section class="hero">
         <h1>Welcome to Throne Empire</h1>
-        <p>Building legacy, driving innovation, and shaping the future of our industry.</p>
+        <p>We craft immersive digital kingdoms. From addictive mobile games and highly powerful apps to stunning, high-converting websites—we build the code that rules the digital space.</p>
         <!-- Clicking this link takes them directly to the info below -->
-        <a href="#more-info" class="cta-btn">Learn More About Us</a>
+        <a href="#about-us" class="cta-btn">Explore Our Empire</a>
     </section>
 
-    <!-- Information Section -->
-    <section id="more-info" class="info-section">
-        <h2>About Our Company</h2>
-        <p style="color: #666; font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
-            Throne Empire is dedicated to excellence. Here is a breakdown of what we do, our core values, and our vision for tomorrow.
+    <!-- About Section -->
+    <section id="about-us" class="section">
+        <h2>About Our Studio</h2>
+        <p class="section-desc">
+            At Throne Empire, we are a full-scale digital production house. We don't just write code; we build digital ecosystems. Whether it's a mobile game that captures millions of players, a streamlined business application, or an elite web platform, our team brings world-class software architecture to life.
         </p>
 
-        <div class="info-grid">
-            <div class="info-card">
+        <div class="grid">
+            <div class="card">
                 <h3>Our Mission</h3>
-                <p>To provide top-tier services and build experiences that empower individuals and industries globally.</p>
+                <p>To turn complex ideas into beautifully smooth software. We elevate standard mobile, web, and gaming concepts into market-dominant digital platforms.</p>
             </div>
-            <div class="info-card">
-                <h3>Our Vision</h3>
-                <p>To lead through sustainable growth, innovative strategies, and unyielding dedication to quality.</p>
+            <div class="card">
+                <h3>Our Technology</h3>
+                <p>We use cutting-edge development engines and programming languages to ensure everything we launch is fast, secure, beautiful, and completely scalable.</p>
             </div>
-            <div class="info-card">
-                <h3>Why Choose Us</h3>
-                <p>We combine deep industry expertise with a royal standard of customer service to deliver results that last.</p>
+            <div class="card">
+                <h3>Your Vision, Built</h3>
+                <p>From independent creators to global enterprises, we help brands seize their throne in the digital economy through expert development pipelines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light" style="max-width: 100%;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <h2>What We Build</h2>
+            <p class="section-desc">Explore our core development pillars. If it lives on a screen, we can build it flawlessly.</p>
+            
+            <div class="grid">
+                <!-- Service 1: Games -->
+                <div class="card">
+                    <h3 style="color: #d4af37;">01. Game Development</h3>
+                    <p>We build highly engaging 2D and 3D games across mobile, PC, and consoles. From initial concept art and character design to advanced physics and multiplayer mechanics, we create virtual worlds that players never want to leave.</p>
+                </div>
+                
+                <!-- Service 2: Apps -->
+                <div class="card">
+                    <h3 style="color: #d4af37;">02. Mobile & Desktop Apps</h3>
+                    <p>Need a custom app for iOS, Android, or desktop? We design slick, user-friendly software tailored to solve real problems. We specialize in seamless user interfaces, blazing-fast processing speeds, and bulletproof security systems.</p>
+                </div>
+                
+                <!-- Service 3: Sites -->
+                <div class="card">
+                    <h3 style="color: #d4af37;">03. Websites & Web Systems</h3>
+                    <p>Your website is your digital headquarters. We develop completely custom, responsive websites, e-commerce stores, and high-performance web applications that load instantly and look breathtaking on every single device.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Throne Empire. All rights reserved.</p>
+        <p>&copy; 2026 Throne Empire. All rights reserved. Code crafted for ultimate digital performance.</p>
     </footer>
 
 </body>
